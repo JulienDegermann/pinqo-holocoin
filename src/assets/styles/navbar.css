@@ -1,0 +1,25 @@
+.navigation ul {
+  display: flex;
+
+  li:hover * {
+    color: var(--white);
+    /* font-weight: bold; */
+  }
+
+  li * {
+    color: #999CA3;
+    padding: .5rem 1rem;
+    transition: all .3s ease;
+
+    &.section-title {
+      font-size: 16px;
+      font-weight: bold;
+    }
+  }
+}
+
+#burger-menu {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
